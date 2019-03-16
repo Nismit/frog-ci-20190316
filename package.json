@@ -5,6 +5,7 @@
     "publish": "npm run build && push-dir --dir=dist --branch=gh-pages --cleanup",
     "start": "webpack-dev-server --config config/webpack.config.js --open",
     "test": "jest",
+    "lint": "eslint .",
     "type-check": "tsc"
   },
   "dependencies": {
@@ -30,5 +31,10 @@
     "moduleNameMapper": {
       "\\.css$": "<rootDir>/src/testMocks/styleMock.js"
     }
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }
