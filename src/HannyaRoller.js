@@ -17,7 +17,7 @@ export default class HannyaRoller {
   start() {
     this._el.appendChild(this.elSpace);
     this.updateLayout();
-    this._startAnimation()
+    this._startAnimation();
   }
 
   updateLayout() {
